@@ -1,4 +1,4 @@
-# 📝 Raw Node.js CRUD API (No Framework, No Dependencies)
+# Raw Node.js CRUD API (No Framework, No Dependencies)
 
 This project is a **pure Node.js backend application** that implements a complete **CRUD API for a Todo app** — without using any frameworks, external libraries, or even npm packages.
 
@@ -6,7 +6,7 @@ It is designed to help you understand how things work **under the hood in Node.j
 
 ---
 
-## 🚀 Features
+##  Features
 
 * Built using **Node.js core modules only**
 * No frameworks (no Express, no Fastify, etc.)
@@ -24,7 +24,7 @@ It is designed to help you understand how things work **under the hood in Node.j
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 RAW-NODE-CRUD-API/
@@ -53,7 +53,7 @@ RAW-NODE-CRUD-API/
 
 ---
 
-## ⚙️ How It Works
+##  How It Works
 
 ### 1. HTTP Server
 
@@ -141,7 +141,7 @@ This ensures:
 
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
 | Method | Endpoint   | Description       |
 | ------ | ---------- | ----------------- |
@@ -153,7 +153,7 @@ This ensures:
 
 ---
 
-## ▶️ Getting Started
+##  Getting Started
 
 ### 1. Clone the Repository
 
@@ -188,7 +188,7 @@ node server.js
 
 ---
 
-## 📚 Reference
+##  Reference
 
 Learning resources :
 
