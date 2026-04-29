@@ -8,15 +8,17 @@ import sendResponse from "./utils/sendResponse.js";
 
 const router = (req, res) => {
   
-  const { method, url } = req;
-  const urlParts = url.split("?")[0].split("/").filter(Boolean);
-  //Console.log("URL parts:", urlParts); // Debugging log to check URL parsing
-  console.log("URL parts:" ,urlParts);
-  console.log(url);
-  
-  // http://localhost:3000/todos/11
-  const basePath = urlParts[0];
-  const id = urlParts[1];
+  const method = req.method;
+  const url = req.url;
+
+  const parts = url.split("/");       // http://localhost:3000/todos/11 : ["", "todos", "11"]
+  const basePath = parts[1];          // "todos"
+  const id = parts[2];                // "11"
+
+  /* syntax difference  
+  // const { method, url } = req;
+  // const [, basePath, id] = url.split("/");  ["", "todos", "11"]    
+  */
 
   // POST /todos → Create
   if (method === "POST" && basePath === "todos" && !id) {

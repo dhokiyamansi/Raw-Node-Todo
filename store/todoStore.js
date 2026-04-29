@@ -1,9 +1,9 @@
-let todos = [];
+const todos = [];
 let idCounter = 1;
 
 
 // CREATE
-const createTodo = ({ title, description = "" }) => {
+const createTodo = ({ title, description }) => {
   const newTodo = {
     id: idCounter++,              
     title,
@@ -18,7 +18,7 @@ const createTodo = ({ title, description = "" }) => {
 
 // GET ALL   
 const getAllTodos = () => {
-  const allTodos = [...todos];
+  const allTodos = [...todos];           // spreading of array object (tasks)
   // console.log("Fetched all todos:", allTodos);
   return allTodos;
 }         
