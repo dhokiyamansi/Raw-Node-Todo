@@ -47,6 +47,7 @@ RAW-NODE-CRUD-API/
 └── utils/
     ├── parseBody.js      # Parses incoming JSON body
     └── sendResponse.js   # Sends JSON responses
+    └── setCors.js   # allow cors origin request
 
 └── README.md             # Project documentation
 ```
